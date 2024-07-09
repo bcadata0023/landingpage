@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://plus.unsplash.com/premium_photo-1664304423623-4f9d5ed90b4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2t5fGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    position: relative;
+    width: 100%;
+    min-height:inherit;
+    /* background-color: black; */
+}
+.txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 0vh;
+    color: beige;
+    bottom: 5%;
+}
+.txt h1{
+    font-weight: 600;
+    font-size:4vw ;
+}
+.txt .images{
+    background-image: url(https://images.unsplash.com/photo-1713553589836-48fcc4b156a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    height:  230px;
+    width: 220px;
+}
+.rtext{
+    display: flex;
+    width: 2.5%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+    font-size: 12px;
+}
+.buttom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+.b1{
+     width: 30%;
+     min-height: inherit;
+     background-image: url(https://images.unsplash.com/photo-1720442208192-26a93de238ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D);
+     background-size: cover;
+     background-position: center;
+}
+.b1 h1{
+    text-align: center;
+    padding: 30px;
+}
+.b1 p{
+    color: aliceblue;
+    text-align: center;
+    padding: 15px;
+}
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://images.unsplash.com/photo-1719300368274-9efe9c6b2d37?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+
+}
+.b2 .up p{
+    color: aliceblue;
+    text-align: center;
+    padding: 15px;
+
+}
+.b2 .dwon{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://images.unsplash.com/photo-1719300368274-9efe9c6b2d37?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+} 
+.b2 .dwon .overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: aquamarine;
+}
+.b3{
+            width: 40%;
+            min-height: inherit;
+            background-image: url(https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29udGFjdHxlbnwwfHwwfHx8MA%3D%3D);
+            background-size: cover;
+            background-position: center;
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vh 3vh;
+}
+.b3 .overlay p{
+    padding: 1.2vh;
+}
+@media(max-width:500px){
+    .txt{
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt h1{
+        font-size: 5vh;
+    }
+     .txt .images{
+        height: 300px;
+        width: 140px;
+        margin: 20px;
+     }
+     .rtext{
+                    flex-direction: column;
+                    align-items: flex-start;
+     }
+     .rtext p{
+        margin-top: 10px;
+
+     }
+     .buttom{
+        flex-direction: column;
+        align-items: flex-start;
+     }
+     .b1{
+          width: 100%;
+     }
+     .b2{
+        width: 100%;
+
+
+     }
+     .b3{
+        width: 100%;
+        background-position: left;
+        min-height: 30vh;
+
+     }
+
+}
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+        
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+}
